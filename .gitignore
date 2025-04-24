@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.log
+
+# Flask and other backend files
+instance/
+.env
+*.db
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# MacOS
+.DS_Store
+
+# Virtual environment in backend folder
+backend/.venv/
+.venv
+venv
+
+# PostgreSQL data
+pgdata/
+
+# Flask migrations
+migrations/
+
+# Testing
+*.tox
+*.nox
+*.coverage
+*.hypothesis/
+
+# Distribution / packaging
+*.tar.gz
+*.egg
+*.egg-info
+dist/
+build/
+
+# Ignore editor and IDE settings
+*.swp  # Vim
+*~      # Emacs
+.idea/  # JetBrains/IntelliJ
+
+# Logs
+*.log
