@@ -24,7 +24,7 @@
 
 ## Project Overview
 
-A full stack task management web application. It features secure JWT authentication, user role management, a fully tested REST API, and a MySQL database.
+A full stack task management web application. It features secure JWT authentication, a fully tested REST API, and a MySQL database.
 Each user can sign up, log in, and manage their personal task list. The frontend consumes the backend's RESTful API.
 
 | Layer        | Technology                |
@@ -49,14 +49,14 @@ Each user can sign up, log in, and manage their personal task list. The frontend
 - User registration, login & logout
 - JWT access token management
 - Secure routes requiring token
-- Vuex store with token, user profile (name, email, role), role: `admin`, `user`
+- Vuex store with token, user profile (name, email)
 
 ### API Endpoints
 
 | Method | Endpoint             | Description              |
 |--------|----------------------|--------------------------|
-| POST   | `/api/auth/register` | Create a new user        |
-| POST   | `/api/auth/login`    | Get JWT token            |
+| POST   | `/api/auth/signup`   | Create a new user        |
+| POST   | `/api/auth/login`    | Get JWT token or modify user infos            |
 | GET    | `/api/tasks`         | Retrieve user's tasks    |
 | POST   | `/api/tasks`         | Create a new task        |
 | PUT    | `/api/tasks/<id>`    | Update a task            |
@@ -91,7 +91,7 @@ npm run serve
 ### Backend (Pytest)
 ```bash
 cd backend
-pytest
+python -m pytest -vv
 ```
 
 ### Frontend (Jest)
